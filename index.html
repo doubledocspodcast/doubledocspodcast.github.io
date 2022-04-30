@@ -28,6 +28,13 @@ div.scrollmenu a:hover {
   background-color: #777;
 }
 </style>
+
+<!-- For emailing in new tab -->
+window.open(
+  'https://google.com',
+  '_blank' // <- This is what makes it open in a new window.
+);
+
 </head>
 <body>
 
@@ -108,7 +115,7 @@ div.scrollmenu a:hover {
       <h3>Daniel Tang</h3>
       <p class="w3-opacity">1st-year MD/PhD at UCLA/Caltech</p>
       <p>Life-story here, LOL</p>
-      <p><button class="w3-button w3-light-grey w3-block" onclick= "document.location =  'mailto:ddtang@mednet.ucla.edu'">Contact</button></p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick= "document.location =  'mailto:ddtang@mednet.ucla.edu'" target="_blank">Contact</button></p>
     </div>
   </div>
 
