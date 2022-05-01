@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <style>
 div.scrollmenu {
@@ -40,11 +41,6 @@ div.scrollmenu::-webkit-scrollbar {
 </head>
 <body>
 
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<script>
-  AOS.init();
-</script>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -61,7 +57,7 @@ div.scrollmenu::-webkit-scrollbar {
 </div>
 
 <!-- Header -->
-<header class="w3-display-container" style="background-color:hsl(0, 0%, 15%);height:500px;width:100%;border:none;" id="home">
+<header class="w3-display-container" style="background-color:hsl(0, 0%, 15%);height:900px;width:100%;border:none;" id="home">
   <img class="w3-image center" src="/images/Title Logo.jpg" alt="Title Logo" style="height:100%;">
 <!--   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
@@ -77,7 +73,8 @@ div.scrollmenu::-webkit-scrollbar {
   </div> -->
 
   <!-- Podcast Episodes Section -->
-  <div class="w3-container w3-padding-64" id="Episodes">
+  <div class="w3-container w3-padding-64" id="Episodes" style="height:800px">
+    <div data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Episodes</h3>
 
   	<div class="scrollmenu">
@@ -91,21 +88,26 @@ div.scrollmenu::-webkit-scrollbar {
   	  <a href="#Episode 8">Episode 8 <p>-</p><p> Gap Years pt 1 </p><p> (to be released) </p></a>
   	  <a href="#Episode 9">Episode 9 <p>-</p><p> Gap Years pt 2 </p><p> (to be released) </p></a>
   	</div>
+    </div>
 
   </div>
 
 <!--     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"></h3> -->
 
-  <div data-aos="fade-up"> Hello </div>
   <!-- About Section -->
   <div class="w3-container w3-padding-64" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p> The Double Docs Podcast is about all things MD/PhD! We are three MD/PhD students at UCLA/Caltech looking to share our experiences that led us to the MD/PhD program and what one can expect as a dual degree student. We hope our podcast helps provide insight into these programs as well as helpful tips for undergrad research, med school applications, and more. You'll also hear from our amazing classmates and faculty, who'll join us each week to provide their unique perspectives on a given topic. We hope you get something out of listening and look forward to meeting you future MD/PhDs!
-    </p>
+    <div data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+      <p> The Double Docs Podcast is about all things MD/PhD! We are three MD/PhD students at UCLA/Caltech looking to share our experiences that led us to the MD/PhD program and what one can expect as a dual degree student. We hope our podcast helps provide insight into these programs as well as helpful tips for undergrad research, med school applications, and more. You'll also hear from our amazing classmates and faculty, who'll join us each week to provide their unique perspectives on a given topic. We hope you get something out of listening and look forward to meeting you future MD/PhDs!
+      </p>
+    </div>
   </div>
 
-  <div class="w3-row-padding" style="max-width: 1200px; margin: auto">
-	<div class="w3-col s4 w3-margin-bottom">
+  <div data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+  <div class="w3-row-padding" style="height:500px; max-width: 1200px; margin: auto">
+    <div class="w3-col s4 w3-margin-bottom">
       <img src="/images/George.jpg" alt="George" style="max-width:100%">
       <h3>George Daghlian</h3>
       <p class="w3-opacity">1st-year MD/PhD at UCLA/Caltech</p>
@@ -127,10 +129,14 @@ div.scrollmenu::-webkit-scrollbar {
       <p><button class="w3-button w3-light-grey w3-block" onclick= "document.location =  'mailto:ddtang@mednet.ucla.edu'" target="_blank">Contact</button></p>
     </div>
   </div>
+  </div>
 
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-64" id="contact">
+  <div class="w3-container w3-padding-64" id="contact" style="height:600px">
+    <div data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Questions and Feedback</h3>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
     <p>Send us any questions you would like answered or any suggestions for the podcast!</p>
     <form action="https://formsubmit.co/doubledocspodcast@gmail.com" method="POST">
       <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -140,6 +146,7 @@ div.scrollmenu::-webkit-scrollbar {
         <i class="fa fa-paper-plane"></i> SEND MESSAGE
       </button>
     </form>
+  </div>
   </div>
 
 <!-- End page content -->
@@ -151,6 +158,11 @@ div.scrollmenu::-webkit-scrollbar {
   <p>Audio and Production by George Daghlian, Graphic Design by Dimitri Cadet, Website by Daniel Tang</p>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
